@@ -12,20 +12,20 @@ h1 {
 }
 
 @media only screen and (min-width: 60em) {
- .name {
-   padding-right: .5rem;
- }
+  .name {
+    padding-right: .5rem;
+  }
 
- .age {
-   padding-right: .5rem;
- }
+  .age {
+    padding-right: .5rem;
+  }
 
- .email {
-   padding-right: .5rem;
- }
+  .email {
+    padding-right: .5rem;
+  }
 
- .physical {
-   padding-right: .5rem;
- }
+  .physical {
+    padding-right: .5rem;
+  }
 
 }
