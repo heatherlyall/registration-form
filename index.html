@@ -4,18 +4,17 @@
   <meta charset="utf-8">
   <title>Contact form</title>
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 
-  <section class="cintact pad-t-2 pad-b-2">
+  <section class="cintact gutter-1-2 pad-t-2 pad-b-2">
     <div class="max-length">
       <h1>Want to go to Mars?</h1>
-      <hr>
 
       <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
@@ -23,22 +22,22 @@
 
       <form class="push-0" method="POST" action="https://formspree.io/lyal0007@algonquincollege.com">
         <fieldset>
-      <legend>Personal Details</legend>
+      <legend>Personal details</legend>
         </fieldset>
         <div class="grid">
-        <div class="push unit l-1-2">
+        <div class="push unit xs-1 l-1-2">
           <label for="name">Name</label>
-          <input id="name" name="name" required>
+          <input id="name" required>
         </div>
-        <div class="push unit l-1-2">
+        <div class="push unit xs-1 l-1-2">
           <label for="age">Age</label>
-          <input id="number" name="age" required>
+          <input id="age" name="age" required>
         </div>
-        <div class="push unit l-1-2">
-          <label for="email">Your email</label>
-          <input id="email" type="email" name="email" required>
+        <div class="push unit xs-1 l-1-2">
+          <label for="email">Email</label>
+          <input id="email" type="email" required>
         </div>
-        <div class="push unit l-1-2">
+        <div class="push unit xs-1 l-1-2">
           <label for="subject">Physical fitness</label>
           <select id="subject" name="_subject">
             <option>Super-human!</option>
@@ -49,8 +48,8 @@
         </div>
         </div>
         <div class="push unit xs-1">
-          <label for="details">Address</label>
-          <textarea id="details" name="message" required></textarea>
+          <label for="address">Address</label>
+          <textarea id="address" name="message" required></textarea>
         </div>
 
         <fieldset>
@@ -65,6 +64,8 @@
         <div>
           <button class="btn btn-dark mega" type="submit">Register for the trip!</button>
         </div>
+
+        <input type="hidden" name="_subject" value="Request to join the mission">
 
       </form>
     </div>
